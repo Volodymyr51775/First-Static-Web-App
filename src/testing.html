@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Ефект паралаксу */
+        .parallax {
+            /* Посилання на ваше зображення */
+            background-image: url("img/q.jpg");
+
+            /* Встановлення мінімальної висоти */
+            min-height: 500px;
+
+            /* Створення ефекту паралаксу */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            transition: background-position 0.5s ease; /* Плавний перехід */
+        }
+        /* Додайте більше контенту, щоб зробити сторінку довшою */
+        body {
+            height: 2000px; /* Наприклад, 2000px */
+        }
+    </style>
+</head>
+<body>
+<!-- Ваша сторінка з іншим контентом -->
+
+<div class="parallax"></div>
+
+<div style="height:1000px;background-color:white;font-size:36px">
+    <br><br><br><br><br><br><br><br><br><br>
+    <p style="text-align:center;">Ваш текст тут</p>
+    <br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<div class="parallax"></div>
+
+<script>
+    // JavaScript для руху зображення
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        // Змінюємо позицію фонового зображення відповідно до прокрутки
+        document.querySelectorAll('.parallax').forEach(parallax => {
+            parallax.style.backgroundPosition = `center ${-1.2 * scrollPosition}px`;
+        });
+    });
+</script>
+</body>
+</html>

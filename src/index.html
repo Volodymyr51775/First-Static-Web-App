@@ -3,101 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fixed Header Example</title>
+    <title>MainPage</title>
     <link rel="icon" href="img/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        /* Стилі для фіксованої панелі */
-        .fixed-header {
-            position: fixed; /* Зробити панель фіксованою */
-            top: 0; /* Розмістити її у верхній частині сторінки */
-            width: 100%; /* Ширина панелі - 100% від ширини вікна */
-            background-color: #333; /* Колір фону */
-            color: #fff; /* Колір тексту */
-            padding: 10px 20px; /* Зовнішні відступи */
-            display: flex; /* Розміщення елементів в ряд по горизонталі */
-            justify-content: space-between; /* Рівномірно розподілити елементи по ширині контейнера */
-            align-items: center; /* Вирівняти елементи по вертикалі по центру */
-            z-index: 1000; /* Забезпечити, що панель буде на передньому плані */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь */
-        }
-
-        .header-links {
-            margin-left: auto; /* Розмістити всі елементи справа */
-            margin-right: 40px; /* Відступ від правого краю на 20px */
-
-        }
-
-        .fixed-header a {
-            color: #fff; /* Колір тексту посилання */
-            text-decoration: none; /* Видалення підкреслення посилання */
-            margin-right: 20px; /* Відступ від правого краю на 20px */
-
-        }
-
-        .fixed-header a:hover {
-            text-decoration: underline; /* Підкреслення тексту посилання при наведенні */
-        }
-
-        /* Стилі для контенту */
-        .content {
-            width: 80%; /* Задайте фіксовану ширину */
-            max-width: 700px; /* Максимальна ширина, яку ви хочете дозволити */
-            margin: 100px auto 50px; /* Автоматичні зовнішні відступи по верхньому та нижньому краях, і центрування по горизонталі */
-            padding: 20px; /* Внутрішні відступи */
-            text-align: center; /* Вирівнювання тексту по центру */
-            background-color: #fff; /* Колір фону */
-            border-radius: 10px; /* Закруглені кути */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь */
-        }
-        .footer-info {
-            font-size: 14px;
-            margin-top: 50px; /* Відступ від останнього елементу контенту */
-            padding: 20px; /* Внутрішні відступи */
-            background-color: #333; /* Колір фону */
-            color: #fff; /* Колір тексту */
-            text-align: center; /* Вирівнювання тексту по центру */
-        }
-    </style>
-</head>
 <body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">
+                    TestLogo
+                </h2>
+            </div>
 
-<div class="fixed-header">
-    <h3>Сайтик</h3>
-    <div class="header-links">
-        <a href="something.html">Контакти</a>
-        <a href="something.html">Інформація</a>
-        <a href="something.html">Щось</a>
-        <a href="https://savelife.in.ua">Донат на ЗСУ</a>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Images</a></li>
+                    <li><a href="#">Our goal</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
-
-<div class="content">
-    <h2>Тут може бути будь-який текст</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed magna nisi. Donec eu varius quam, vitae vulputate ipsum. Ut urna ipsum, elementum in nibh eget, ultricies ultrices ante. Morbi et ultrices libero. Proin convallis nunc id nisi suscipit sodales sit amet a risus. Nullam magna neque, egestas nec lacus at, tempor aliquet eros. Integer sit amet rutrum sem. Nullam nec elit dolor. Nunc placerat enim sem, sit amet vestibulum dolor dapibus vel. Curabitur et dui faucibus, molestie ligula at, posuere ipsum. Curabitur varius ipsum nec nisl blandit, ac porttitor urna ullamcorper. Nulla in leo in elit scelerisque tincidunt. Aenean tempus venenatis massa at bibendum. Ut luctus turpis nec magna dapibus, non viverra eros hendrerit. Etiam ultricies urna sed egestas vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-    </p>
-    <p>
-        Maecenas eu ligula porttitor, aliquet libero eu, luctus nisi. Curabitur at interdum turpis, ac tristique augue. Nulla maximus eros ac tristique imperdiet. Ut hendrerit accumsan arcu, ut bibendum felis tincidunt vitae. Duis mattis tincidunt eros eget tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque in sem et libero consequat imperdiet. Integer lacus metus, convallis at ullamcorper a, imperdiet venenatis arcu. Sed id egestas purus.
-    </p>
-    <p>
-        Etiam urna dui, lacinia a velit ac, gravida porttitor sapien. Etiam sit amet lorem tortor. Aliquam lectus ipsum, luctus ut tortor at, aliquam venenatis magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut eget tempus tortor. Vestibulum vitae est a ante tincidunt egestas dictum ut nibh. Duis consectetur interdum nulla, vel consectetur orci vehicula a. Proin vitae est eu elit accumsan suscipit. Vestibulum at pulvinar eros, vitae imperdiet massa. Vestibulum quis purus sit amet lectus aliquet aliquet.
-    </p>
-    <p>
-        Mauris quis lacus ultricies, congue magna semper, posuere tellus. Nunc tristique ullamcorper lacus in sodales. Quisque vel bibendum mauris. Ut vitae luctus dolor. Maecenas maximus, nunc ac scelerisque ultrices, neque ligula euismod sapien, id varius turpis lorem ac enim. Sed consectetur tortor ut mollis aliquam. Etiam tristique ultricies mauris, vitae eleifend lorem accumsan suscipit. Pellentesque accumsan a elit sit amet porttitor. Ut dignissim tellus in quam sagittis, ut volutpat lorem maximus. Aenean sagittis nibh rhoncus congue elementum. Quisque semper, leo sit amet pharetra condimentum, ex turpis ultricies magna, vel sollicitudin erat odio sit amet diam. Duis eget vestibulum diam, et fringilla urna. Nam nec nisl nec leo euismod pharetra. Praesent id lorem sit amet urna venenatis commodo.
-    </p>
-    <p>
-        Phasellus interdum nulla ac ornare accumsan. Vivamus finibus varius neque, id rutrum nunc sollicitudin non. Vestibulum maximus lacinia quam non pulvinar. Donec tincidunt vestibulum purus, vitae dignissim leo vehicula vitae. Suspendisse eu commodo metus. Maecenas ultrices vestibulum diam, id tincidunt mauris fermentum nec. Fusce at sapien mattis, porta lacus vel, facilisis eros. Nulla et orci nec diam condimentum ullamcorper et vel sapien. Vivamus in pretium tellus. Donec nec nibh sit amet eros ultricies aliquet at tristique augue. Morbi molestie ipsum sit amet ligula faucibus, nec congue leo euismod. Nullam varius mauris ut facilisis cursus. Praesent at dignissim felis. Curabitur.
-    </p>
-</div>
-<div class="footer-info">
-    <h3>Контактні дані: example@gmail.com</h3>
-</div>
 </body>
 </html>
