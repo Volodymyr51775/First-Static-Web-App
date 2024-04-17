@@ -9,22 +9,58 @@
 
 <body>
     <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">
-                    TestLogo
-                </h2>
-            </div>
+        <div class="top_parallax">
+            <script>
+                // JavaScript для руху зображення
+                window.addEventListener('scroll', () => {
+                    const scrollPosition = window.scrollY;
+                    // Змінюємо позицію фонового зображення відповідно до прокрутки
+                    document.querySelectorAll('.top_parallax').forEach(parallax => {
+                        parallax.style.backgroundPosition = `80% ${-0.1 * scrollPosition}px`;
+                    });
+                });
+            </script>
+        </div>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Images</a></li>
-                    <li><a href="#">Our goal</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
+        <div class="content">
+            <div class="about">
+                <div class="about_text">
+                    <h1>Bonjour,</h1>
+                    <p>Je m’appelle Tetiana. Je suis arrivée en France avec ma grande sœur en mars 2022, à l’âge de 14 ans, après avoir fui l’Ukraine.</p>
+                    <p>Mon père a perdu son travail à cause de la guerre et mes parents, restés à Kiev, sont dans une situation financière compliquée. Ma sœur et moi avons été accueillies à Hossegor par des personnes dévouées qui nous ont hébergées, se sont occupées de nous et m’ont offert la possibilité de continuer à jouer au tennis. Cette situation ne pouvait pas durer longtemps. Ma sœur a dû retourner en Ukraine et j’ai été prise en charge par l’Aide Sociale à l’Enfance, qui m’a trouvé une famille d’accueil à Tarnos. Tout cela a été pour moi une période très difficile.</p>
+                </div>
+                <div class="about_photo">
+                    <img src="img/no_image.png" alt="img_1">
+                </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+
+<!--<body>-->
+<!--    <div class="main">-->
+<!--        <div class="navbar">-->
+<!--            <div class="icon">-->
+<!--                <h2 class="logo">-->
+<!--                    TestLogo-->
+<!--                </h2>-->
+<!--            </div>-->
+
+<!--            <div class="menu">-->
+<!--                <ul>-->
+<!--                    <li><a href="#">About</a></li>-->
+<!--                    <li><a href="#">Images</a></li>-->
+<!--                    <li><a href="#">Our goal</a></li>-->
+<!--                    <li><a href="#">Contacts</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <div class="search">-->
+<!--                <input class="srch" type="search" name="" placeholder="Type to text">-->
+<!--                <a href="#"></a> <button class="btn">Search</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</body>-->

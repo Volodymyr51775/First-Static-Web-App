@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe40ca06-e302-419a-8709-22a352486b3c" name="Changes" comment="Testing video">
-      <change afterPath="$PROJECT_DIR$/video/coolVideo.mp4" afterDir="false" />
+    <list default="true" id="fe40ca06-e302-419a-8709-22a352486b3c" name="Changes" comment="New version of site, and I added a testing.html">
+      <change afterPath="$PROJECT_DIR$/img/no_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tennis_ball_v2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something.html" beforeDir="false" afterPath="$PROJECT_DIR$/something.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="newSite" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -46,25 +54,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/HP/Desktop/Програмування/Git/First-Static-Web-App/src/video",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Desktop/Програмування/Git/First-Static-Web-App/src/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HP\Desktop\Програмування\Git\First-Static-Web-App\src\video" />
       <recent name="C:\Users\HP\Desktop\Програмування\Git\First-Static-Web-App\src\img" />
+      <recent name="C:\Users\HP\Desktop\Програмування\Git\First-Static-Web-App\src" />
+      <recent name="C:\Users\HP\Desktop\Програмування\Git\First-Static-Web-App\src\video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HP\Desktop\Програмування\Git\First-Static-Web-App\src" />
@@ -174,6 +183,10 @@
       <workItem from="1712128074469" duration="1705000" />
       <workItem from="1712145046679" duration="4821000" />
       <workItem from="1712476799491" duration="48000" />
+      <workItem from="1712928160410" duration="716000" />
+      <workItem from="1713215112056" duration="13000" />
+      <workItem from="1713260234204" duration="762000" />
+      <workItem from="1713356894210" duration="6476000" />
     </task>
     <task id="LOCAL-00001" summary="Updated index.html and added something.html">
       <option name="closed" value="true" />
@@ -199,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712476666400</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New version of site, and I added a testing.html">
+      <option name="closed" value="true" />
+      <created>1712852863241</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712852863241</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +240,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated index.html and added something.html" />
     <MESSAGE value="Testing video" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing video" />
+    <MESSAGE value="New version of site, and I added a testing.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="New version of site, and I added a testing.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
