@@ -36,15 +36,30 @@ body {
     padding-top: 30px;
 }
 
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .about_text {
     float: left;
     width: 50%; /* Ширина текстового блоку */
+    animation: slideUp 1s ease forwards;
+    opacity: 0;
 }
 
-.about_photo {
+.about_photo{
     float: right;
     width: 50%; /* Ширина блоку з зображенням */
     text-align: center; /* Вирівнювання тексту по центру */
+    animation: slideUpImage 1s ease forwards;
+    opacity: 0;
 
 }
 
@@ -75,7 +90,7 @@ body {
     }
 
     .content h1 {
-        font-size: 20px; /* Новий розмір шрифту для мобільних пристроїв */
+        font-size: 30px; /* Новий розмір шрифту для мобільних пристроїв */
     }
 
     .content p {

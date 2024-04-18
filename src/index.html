@@ -7,6 +7,18 @@
     <link rel="icon" href="img/ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
+<script>
+    window.addEventListener('scroll', () => {
+        const aboutTextElements = document.querySelectorAll('.about_text, .about_photo');
+        aboutTextElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.style.animation = 'slideUp 1s ease forwards';
+            }
+        });
+    });
+</script>
+
 <body>
     <div class="main">
         <div class="top_parallax">
@@ -32,7 +44,9 @@
                 <div class="about_photo">
                     <img src="img/no_image.png" alt="img_1">
                 </div>
+
             </div>
+
         </div>
     </div>
 </body>

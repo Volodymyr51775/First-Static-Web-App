@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe40ca06-e302-419a-8709-22a352486b3c" name="Changes" comment="New version of site, and I added a testing.html">
-      <change afterPath="$PROJECT_DIR$/img/no_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tennis_ball_v2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fe40ca06-e302-419a-8709-22a352486b3c" name="Changes" comment="I totally change anything.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -186,7 +183,8 @@
       <workItem from="1712928160410" duration="716000" />
       <workItem from="1713215112056" duration="13000" />
       <workItem from="1713260234204" duration="762000" />
-      <workItem from="1713356894210" duration="6476000" />
+      <workItem from="1713356894210" duration="7950000" />
+      <workItem from="1713424409598" duration="1643000" />
     </task>
     <task id="LOCAL-00001" summary="Updated index.html and added something.html">
       <option name="closed" value="true" />
@@ -220,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712852863241</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="I totally change anything.">
+      <option name="closed" value="true" />
+      <created>1713365689111</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713365689111</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +247,8 @@
     <MESSAGE value="Updated index.html and added something.html" />
     <MESSAGE value="Testing video" />
     <MESSAGE value="New version of site, and I added a testing.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="New version of site, and I added a testing.html" />
+    <MESSAGE value="I totally change anything." />
+    <option name="LAST_COMMIT_MESSAGE" value="I totally change anything." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
