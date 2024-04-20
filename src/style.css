@@ -36,6 +36,11 @@ body {
     padding-top: 30px;
 }
 
+.content h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
 @keyframes slideUp {
     from {
         transform: translateY(100%);
@@ -46,38 +51,139 @@ body {
         opacity: 1;
     }
 }
+.about {
+    display: flex; /* Встановлюємо flexbox */
+    justify-content: space-between; /* Рівномірно розподіляє елементи по ширині контейнера */
+}
 
+.about_text, .about_photo {
+    display: inline-block; /* Замінюємо float */
+    vertical-align: top; /* Вирівнюємо елементи по верхньому краю */
+    width: 50%;
+    box-sizing: border-box; /* Включаємо розрахунок padding у визначення ширини */
+}
 .about_text {
-    float: left;
-    width: 50%; /* Ширина текстового блоку */
-    animation: slideUp 1s ease forwards;
-    opacity: 0;
+    width: 45%; /* Змінюємо ширину текстового блоку */
 }
 
-.about_photo{
-    float: right;
-    width: 50%; /* Ширина блоку з зображенням */
-    text-align: center; /* Вирівнювання тексту по центру */
-    animation: slideUpImage 1s ease forwards;
-    opacity: 0;
+.about_photo {
+    width: 45%;
+    max-width: 100%; /* Зберігаємо максимальну ширину зображення */
+    text-align: center; /* Центруємо зображення */
+}
+
+.about_photo img {
+    max-width: 100%; /* Зберігаємо максимальну ширину зображення */
+    height: auto; /* Зберігаємо пропорції зображення */
+    display: block; /* Зображення стає блочним елементом */
+    margin-left: auto; /* Автоматичний лівий відступ */
+    margin-right: auto; /* Автоматичний правий відступ */
+    border-radius: 10px;
 
 }
+
+
+.black_line {
+    height: 6px;
+    width: 75%;
+    background-position: center;
+    margin: 20px; /* Встановлюємо відступи зверху і знизу */
+    background-color: #101926;
+}
+
+
+
 
 
 .content h1{
     font-family: "Franklin Gothic Medium", serif;
     padding-left: 2px;
-    font-size: 5vw;
+    font-size: 6vw;
     color: #101926;
 }
 
 .content p{
     font-family: "Franklin Gothic Medium", serif;
     padding-left: 20px;
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: #475467;
 
 }
+
+.about_2{
+    /*background-color: #DEE0CC;*/
+    background-color: #d6d9c5;
+    height: fit-content;
+    margin-top: 50px;
+}
+
+.text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    width: 95%;
+
+}
+
+.text p{
+    color: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust min and max width as needed */
+    grid-gap: 20px; /* Adjust gap between items */
+    margin: 30px;
+}
+
+.gallery h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Add this */
+    padding: 10px; /* Add this */
+}
+
+/*.image-container::after {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    background-color: red;*/
+/*    border-radius: 10px; !* Adjust as needed *!*/
+/*    width: calc(100% - 20px); !* Adjust as needed *!*/
+/*    height: calc(100% - 20px); !* Adjust as needed *!*/
+/*    position: absolute;*/
+/*    z-index: -1;*/
+/*    top: 10px; !* Adjust as needed *!*/
+/*    left: 10px; !* Adjust as needed *!*/
+/*}*/
+
+
+
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.rectangle {
+    width: 100px;
+    height: 200px;
+    background-color: red;
+    border-radius: 10px;
+    margin-top: 10px; /* Adjust spacing between image and rectangle */
+}
+
+
+
+
+
+
+
 
 
 @media (max-width: 600px) {
@@ -90,22 +196,32 @@ body {
     }
 
     .content h1 {
-        font-size: 30px; /* Новий розмір шрифту для мобільних пристроїв */
+        font-size: 30px; /* New font size for mobile devices */
+        text-align: center; /* Center the text */
     }
 
     .content p {
-        font-size: 16px; /* Новий розмір шрифту для мобільних пристроїв */
+        font-size: 16px; /* New font size for mobile devices */
+        text-align: center; /* Center the text */
     }
 
-    .about_text {
-        float: none;
-        width: 100%; /* Змінити ширину блоку на 100% */
+    .about {
+        display: flex;
+        align-items: center; /* Align center horizontally */
+        justify-content: center; /* Align center vertically */
+        flex-direction: column; /* Change the order of elements to column on mobile devices */
+    }
 
+    .about_text, .about_photo {
+        width: 95%;
+        text-align: center; /* Center the text */
     }
 
     .about_photo {
-        float: none; /* Зняти зображення зі зміщення */
-        width: 100%; /* Змінити ширину блоку на 100% */
+        margin-top: 2vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
