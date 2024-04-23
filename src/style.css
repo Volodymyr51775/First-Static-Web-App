@@ -1,138 +1,201 @@
-*{
+@font-face {
+    font-family: 'Omnes Pro';
+    src: url('font/omnes_medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
     margin: 0;
     padding: 0;
 }
 
 body {
-    height: 2000px; /* Наприклад, 2000px */
+    height: 2000px;
 }
 
 .main {
     width: 100%;
-    /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%));*/
-    /*background: white center;*/
-    /*background-size: cover;*/
     height: 109vh;
+    font-family: "Omnes Pro", sans-serif;
 }
 
 .top_parallax {
-    /* Посилання на ваше зображення */
-    background-image: url("img/q.jpg");
-
-    /* Встановлення мінімальних розмірів */
-    min-height: 60%;
-
-    /* Створення ефекту паралаксу */
+    background-image: url("img/back_image_2.jpg");
+    min-height: 56%;
     background-attachment: fixed;
     background-position: 80% center;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    transition: background-position 0.5s ease; /* Плавний перехід */
+    transition: background-position 0.5s ease;
+}
+
+.top_bar {
+    position: absolute;
+    left: 20px; /* Змінюємо лівий відступ */
+    top: 20px; /* Змінюємо верхній відступ */
+}
+
+.navigation_bar {
+    position: absolute;
+    right: 20px; /* Змінюємо правий відступ */
+    top: 20px; /* Змінюємо верхній відступ */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+}
+
+
+.navigation_bar p {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 3vw;
+}
+
+.top_bar h1 {
+    font-size: 4vw;
+}
+
+.navigation_bar p:hover {
+    color: #ff6600;
 }
 
 .content {
-    padding-top: 30px;
+    padding-top: 50px;
+    font-family: "Omnes Pro", serif;
+    margin: 30px;
 }
 
 .content h1 {
     text-align: center;
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
-@keyframes slideUp {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.content, .about, .about_text, .about_photo, .about_2, .text, .image-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
 }
+
+.fade-in-element {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 .about {
-    display: flex; /* Встановлюємо flexbox */
-    justify-content: space-between; /* Рівномірно розподіляє елементи по ширині контейнера */
+    display: flex;
+    justify-content: space-between;
 }
 
 .about_text, .about_photo {
-    display: inline-block; /* Замінюємо float */
-    vertical-align: top; /* Вирівнюємо елементи по верхньому краю */
+    display: inline-block;
+    vertical-align: top;
     width: 50%;
-    box-sizing: border-box; /* Включаємо розрахунок padding у визначення ширини */
+    box-sizing: border-box;
 }
+
 .about_text {
-    width: 45%; /* Змінюємо ширину текстового блоку */
+    width: 45%;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .about_photo {
     width: 45%;
-    max-width: 100%; /* Зберігаємо максимальну ширину зображення */
-    text-align: center; /* Центруємо зображення */
+    max-width: 100%;
+    text-align: center;
 }
 
 .about_photo img {
-    max-width: 100%; /* Зберігаємо максимальну ширину зображення */
-    height: auto; /* Зберігаємо пропорції зображення */
-    display: block; /* Зображення стає блочним елементом */
-    margin-left: auto; /* Автоматичний лівий відступ */
-    margin-right: auto; /* Автоматичний правий відступ */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
-
 }
-
-
-.black_line {
-    height: 6px;
-    width: 75%;
-    background-position: center;
-    margin: 20px; /* Встановлюємо відступи зверху і знизу */
-    background-color: #101926;
-}
-
-
-
-
 
 .content h1{
-    font-family: "Franklin Gothic Medium", serif;
+    font-family: "Omnes Pro", serif;
     padding-left: 2px;
-    font-size: 6vw;
+    font-size: xx-large;
     color: #101926;
 }
 
 .content p{
-    font-family: "Franklin Gothic Medium", serif;
+    font-family: "Omnes Pro", serif;
     padding-left: 20px;
     font-size: 2vw;
     color: #475467;
-
 }
 
 .about_2{
-    /*background-color: #DEE0CC;*/
-    background-color: #d6d9c5;
+    background-color: #42E9E3;
     height: fit-content;
     margin-top: 50px;
+    display: flex;
+}
+
+.void {
+    flex: 1;
 }
 
 .text {
-    padding-top: 50px;
-    padding-bottom: 50px;
-
+    padding: 50px;
     width: 95%;
+}
 
+.about_2 .text {
+    text-align: center;
+    flex: 1;
 }
 
 .text p{
     color: white;
 }
 
+.news {
+    display: flex;
+    /*position: relative;*/
+    /*display: inline-block;*/
+}
+
+/*.news_img {*/
+/*    margin-left: 50px;*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    width: 50vw; !* Задайте ширину та висоту контейнера *!*/
+/*    height: 50vw;*/
+/*    background-image: url('img/gallery/g_img_3.jpg'); !* Встановіть зображення як фон *!*/
+/*    background-size: cover; !* Забезпечте, щоб зображення заповнило контейнер *!*/
+/*}*/
+
+/*.description {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    right: -150px; !* половина ширини прямокутника *!*/
+/*    transform: translateY(-50%);*/
+/*    width: 300px;*/
+/*    height: 200px;*/
+/*    background-color: #f0f0f0;*/
+/*    text-align: center; !* Горизонтальне вирівнювання тексту *!*/
+/*}*/
+
+
+
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust min and max width as needed */
-    grid-gap: 20px; /* Adjust gap between items */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
     margin: 30px;
 }
 
@@ -144,25 +207,9 @@ body {
 .image-container {
     display: flex;
     flex-direction: column;
-    position: relative; /* Add this */
-    padding: 10px; /* Add this */
+    position: relative;
+    padding: 10px;
 }
-
-/*.image-container::after {*/
-/*    content: "";*/
-/*    display: block;*/
-/*    background-color: red;*/
-/*    border-radius: 10px; !* Adjust as needed *!*/
-/*    width: calc(100% - 20px); !* Adjust as needed *!*/
-/*    height: calc(100% - 20px); !* Adjust as needed *!*/
-/*    position: absolute;*/
-/*    z-index: -1;*/
-/*    top: 10px; !* Adjust as needed *!*/
-/*    left: 10px; !* Adjust as needed *!*/
-/*}*/
-
-
-
 
 .gallery img {
     max-width: 100%;
@@ -175,46 +222,87 @@ body {
     height: 200px;
     background-color: red;
     border-radius: 10px;
-    margin-top: 10px; /* Adjust spacing between image and rectangle */
+    margin-top: 10px;
 }
 
+.bottom_bar{
+    text-align: center;
+    background-color: #172624;
+    height: fit-content;
+    border-radius: 10px;
 
+}
 
-
-
-
-
-
+.bottom_bar p{
+    color: white;
+    padding: 20px;
+}
 
 @media (max-width: 600px) {
     .top_parallax {
-        /* background-size: 350% auto; */
         background-size: cover;
         min-height: 45%;
         background-attachment: scroll;
         background-image: url("img/tennis_ball_v2.png");
     }
 
+    .top_bar h1{
+        font-size: 8vw;
+    }
+
+    .navigation_bar {
+        position: fixed; /* Змінюємо позицію на fixed */
+        bottom: 0; /* Змінюємо відступ знизу на 0 */
+        left: 0; /* Змінюємо відступ зліва на 0 */
+        right: 0; /* Змінюємо відступ справа на 0 */
+        top: auto; /* Видаляємо верхній відступ */
+        background-color: #172624; /* Змінюємо колір фону на чорний */
+        display: flex; /* Використовуємо flex для розміщення елементів */
+        justify-content: space-around; /* Розподіляємо елементи рівномірно по всій ширині */
+        z-index: 1;
+        height: 70px;
+        border-radius: 10px;
+
+    }
+
+    .navigation_bar p {
+        flex: 1; /* Дозволяємо кожному елементу розтягуватися, щоб заповнити доступне простір */
+        text-align: center; /* Вирівнюємо текст по центру */
+        color: white;
+        font-size: 4vw;
+    }
+
+    .space_for_phone{
+        height: 78px;
+        background-color: #172624;
+        border-radius: 10px;
+    }
+
+
+
     .content h1 {
-        font-size: 30px; /* New font size for mobile devices */
-        text-align: center; /* Center the text */
+        text-align: center;
     }
 
     .content p {
-        font-size: 16px; /* New font size for mobile devices */
-        text-align: center; /* Center the text */
+        font-size: 16px;
+        text-align: center;
     }
 
     .about {
         display: flex;
-        align-items: center; /* Align center horizontally */
-        justify-content: center; /* Align center vertically */
-        flex-direction: column; /* Change the order of elements to column on mobile devices */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .about_text, .about_photo {
         width: 95%;
-        text-align: center; /* Center the text */
+        text-align: center;
+    }
+
+    .void {
+        flex: 0;
     }
 
     .about_photo {
@@ -224,82 +312,3 @@ body {
         margin-right: auto;
     }
 }
-
-
-
-
-
-
-
-
-/*.navbar{*/
-/*    background-color: #222529; !* Темний колір з прозорістю *!*/
-/*    padding: 10px 20px; !* Параметри відступу *!*/
-/*    position: fixed; !* Фіксована позиція *!*/
-/*    top: 0; !* Розташування зверху *!*/
-/*    left: 0; !* Розташування зліва *!*/
-/*    width: 100%; !* Ширина весь екран *!*/
-/*    z-index: 1000; !* Індекс зверху *!*/
-/*    opacity: 0.9; !* Прозорість *!*/
-/*}*/
-
-/*.icon{*/
-/*    width: 200px;*/
-/*    float: left;*/
-/*    height: 70px;*/
-/*}*/
-
-/*.logo{*/
-/*    color: white;*/
-/*    font-size: 40px;*/
-/*    font-family: Arial, serif;*/
-/*    padding-left: 20px;*/
-/*    float: left;*/
-/*    padding-top: 10px;*/
-/*}*/
-
-/*.menu{*/
-/*    width: 400px;*/
-/*    float: left;*/
-/*    height: 70px;*/
-/*}*/
-
-/*ul{*/
-/*    float: left;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
-/*ul li{*/
-/*    list-style: none;*/
-/*    margin-left: 62px;*/
-/*    margin-top: 20px;*/
-/*    font-size: 20px;*/
-/*}*/
-
-/*ul li a{*/
-/*    text-decoration: none;*/
-/*    color: white;*/
-/*    font-family: Arial, serif;*/
-/*    font-weight: bold;*/
-/*    transition: 0.4s ease-in-out;*/
-/*}*/
-
-/*ul li a:hover{*/
-/*    color: aqua;*/
-/*}*/
-
-/*.search{*/
-/*    width: 330px;*/
-/*    float: left;*/
-/*    margin-left: 270px;*/
-/*}*/
-
-/*.srch{*/
-/*    font-family: 'Times New Roman';*/
-/*    width: 200px;*/
-/*    height: 40px;*/
-/*    background: transparent;*/
-/*    border: 2px solid white;*/
-/*}*/

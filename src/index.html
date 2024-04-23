@@ -8,22 +8,63 @@
     <link rel="stylesheet" href="style.css">
 
 <script>
-    window.addEventListener('scroll', () => {
-        const aboutTextElements = document.querySelectorAll('.about_text, .about_photo, .text');
-        aboutTextElements.forEach(el => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top < window.innerHeight) {
-                el.style.animation = 'slideUp 1s ease forwards';
+    window.addEventListener('scroll', function() {
+        var elements = document.querySelectorAll('.content, .about, .about_text, .about_photo, .about_2, .text, .image-container'); // замініть це на селектори ваших елементів
+        var windowHeight = window.innerHeight;
+
+        function checkPosition() {
+            for (var i = 0; i < elements.length; i++) {
+                var element = elements[i];
+                var positionFromTop = elements[i].getBoundingClientRect().top;
+
+                if (positionFromTop - windowHeight <= 0) {
+                    element.classList.add('fade-in-element');
+                }
             }
-        });
+        }
+
+        checkPosition();
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        var elements = document.querySelectorAll('.content, .about, .about_text, .about_photo, .about_2, .text'); // замініть це на селектори ваших елементів
+        var windowHeight = window.innerHeight;
+
+        function checkPosition() {
+            for (var i = 0; i < elements.length; i++) {
+                var element = elements[i];
+                var positionFromTop = elements[i].getBoundingClientRect().top;
+
+                if (positionFromTop - windowHeight <= 0) {
+                    element.classList.add('fade-in-element');
+                }
+            }
+        }
+
+        checkPosition();
+
+        window.addEventListener('scroll', checkPosition);
     });
 
+
+
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
 
 </script>
 
 <body>
     <div class="main">
         <div class="top_parallax">
+            <div class="top_bar">
+                <h1>DAVAI-TENNIS</h1>
+            </div>
+            <div class="navigation_bar">
+                <p onclick="scrollToSection('about')">A propos de moi</p>
+                <p onclick="scrollToSection('news')">Actualités</p>
+                <p onclick="scrollToSection('gallery')">gallerie</p>
+            </div>
             <script>
                 // JavaScript для руху зображення
                 window.addEventListener('scroll', () => {
@@ -37,7 +78,7 @@
         </div>
 
         <div class="content">
-            <div class="about">
+            <div class="about" id="about">
                 <div class="about_text">
                     <h1>Bonjour,</h1>
                     <p>Je m’appelle Tetiana. Je suis arrivée en France avec ma grande sœur en mars 2022, à l’âge de 14 ans, après avoir fui l’Ukraine.</p>
@@ -47,18 +88,55 @@
                     <img src="img/gallery/g_img_1.jpg" alt="img_1">
                 </div>
             </div>
+
             <div class="about_2">
+                <div class="void"></div>
                 <div class="text">
                     <p>En l’espace de deux ans, j’ai gagné en maturité et je suis devenue plus indépendante. Une fois ma situation stabilisée, j’ai commencé à regarder vers l’avenir. Tout en continuant à suivre l’école à distance en Ukraine, j’ai obtenu le Diplôme National du Brevet avec mention très bien et je suis actuellement scolarisée en classe de seconde au lycée de Tyrosse, avec des résultats très honorables.</p>
-                    <p>Mais mes objectifs ne sont pas uniquement scolaires : je rêve de devenir joueuse de tennis professionnelle. En effet, je pratique ce sport depuis l'âge de cinq ans et demi et j’ai participé à mes premiers tournois à 10 ans. Deux ans plus tard, j’étais qualifiée au niveau national et même international. Le Covid ne m’a pas empêchée de continuer à jouer. C’est la guerre qui m’a arrêtée.</p>
-                    <p>Pour parvenir à me faire une place parmi les meilleures joueuses de ma catégorie, il faut s’entrainer dur, avec une détermination sans faille, et progresser au classement. Cela ne peut se faire sans participer à des grands tournois nationaux et internationaux. Je travaille donc pendant une partie des vacances scolaires pour contribuer au financement de mes déplacements. En effet, mon coach, qui m’entraîne et m’accompagne en tournois bénévolement depuis plusieurs mois, ne peut pas tout prendre en charge. Je réfléchis également à suivre dès septembre prochain mes cours scolaires en distanciel pour avoir une organisation plus adaptée à ce double projet mais cela a également un coût. </p>
-                    <p>Si vous avez la possibilité de m’aider à devenir joueuse professionnelle tout en poursuivant mes études, je vous invite à déposer la participation de votre choix dans cette cagnotte.</p>
-                    <p>Merci d’avance pour votre aide et je vous tiendrai bien évidemment au courant de ma progression tennistique et scolaire. </p>
+<!--                    <p>Mais mes objectifs ne sont pas uniquement scolaires : je rêve de devenir joueuse de tennis professionnelle. En effet, je pratique ce sport depuis l'âge de cinq ans et demi et j’ai participé à mes premiers tournois à 10 ans. Deux ans plus tard, j’étais qualifiée au niveau national et même international. Le Covid ne m’a pas empêchée de continuer à jouer. C’est la guerre qui m’a arrêtée.</p>-->
+<!--                    <p>Pour parvenir à me faire une place parmi les meilleures joueuses de ma catégorie, il faut s’entrainer dur, avec une détermination sans faille, et progresser au classement. Cela ne peut se faire sans participer à des grands tournois nationaux et internationaux. Je travaille donc pendant une partie des vacances scolaires pour contribuer au financement de mes déplacements. En effet, mon coach, qui m’entraîne et m’accompagne en tournois bénévolement depuis plusieurs mois, ne peut pas tout prendre en charge. Je réfléchis également à suivre dès septembre prochain mes cours scolaires en distanciel pour avoir une organisation plus adaptée à ce double projet mais cela a également un coût. </p>-->
+<!--                    <p>Si vous avez la possibilité de m’aider à devenir joueuse professionnelle tout en poursuivant mes études, je vous invite à déposer la participation de votre choix dans cette cagnotte.</p>-->
+<!--                    <p>Merci d’avance pour votre aide et je vous tiendrai bien évidemment au courant de ma progression tennistique et scolaire. </p>-->
 
                 </div>
             </div>
 
-            <h1>gallerie</h1>
+            <div class="about" style="margin-top: 50px">
+                <div class="about_text">
+                    <p>Mais mes objectifs ne sont pas uniquement scolaires : je rêve de devenir joueuse de tennis professionnelle. En effet, je pratique ce sport depuis l'âge de cinq ans et demi et j’ai participé à mes premiers tournois à 10 ans. Deux ans plus tard, j’étais qualifiée au niveau national et même international. Le Covid ne m’a pas empêchée de continuer à jouer. C’est la guerre qui m’a arrêtée.</p>
+                </div>
+                <div class="about_photo">
+                    <img src="img/gallery/g_img_7.jpg" alt="img_1">
+                </div>
+            </div>
+
+            <h1 id="news">actualités</h1>
+
+            <div class="about">
+                <div class="about_photo">
+                    <img src="img/gallery/g_img_3.jpg" alt="img12">
+                </div>
+
+                <div class="about_text" style="border-radius: 10px; background-color: #f0f0f0" >
+                    <h1>Text</h1>
+                    <p>text text text</p>
+                    <p>text text text</p>
+                    <p>text text text</p>
+                </div>
+            </div>
+<!--            <div class="news">-->
+<!--                <div class="news_img">-->
+<!--                    <div class="description">-->
+<!--                        <p>Bodsfng</p>-->
+<!--                        <p>sdf</p>-->
+<!--                        <p>adfas</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+
+
+            <h1 id="gallery">gallerie</h1>
 
 
             <div class="gallery">
@@ -80,9 +158,13 @@
             </div>
 
 
-            </div>
         </div>
 
+        <div class="bottom_bar">
+            <p>example@gmail.com</p>
+        </div>
+        <div class="space_for_phone"></div>
+    </div>
 </body>
 </html>
 
