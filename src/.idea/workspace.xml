@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe40ca06-e302-419a-8709-22a352486b3c" name="Changes" comment="I added gallery">
-      <change afterPath="$PROJECT_DIR$/font/omnes_medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/back_image_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/back_image_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/gallery/g_img_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/test_back.jpg" afterDir="false" />
+    <list default="true" id="fe40ca06-e302-419a-8709-22a352486b3c" name="Changes" comment="I added new elements, and now it's almost final version">
+      <change afterPath="$PROJECT_DIR$/font/omnes_bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/back_image_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/back_image_3_v2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/back_image_3_v3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -56,26 +55,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/HP/Desktop/Програмування/Git/First-Static-Web-App/src/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Desktop/Програмування/Git/First-Static-Web-App/src/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HP\Desktop\Програмування\Git\First-Static-Web-App\src\img" />
-      <recent name="C:\Users\HP\Desktop\Програмування\Git\First-Static-Web-App\src\img\gallery" />
       <recent name="C:\Users\HP\Desktop\Програмування\Git\First-Static-Web-App\src\font" />
+      <recent name="C:\Users\HP\Desktop\Програмування\Git\First-Static-Web-App\src\img\gallery" />
       <recent name="C:\Users\HP\Desktop\Програмування\Git\First-Static-Web-App\src" />
       <recent name="C:\Users\HP\Desktop\Програмування\Git\First-Static-Web-App\src\video" />
     </key>
@@ -198,7 +197,13 @@
       <workItem from="1713606945641" duration="6577000" />
       <workItem from="1713785412036" duration="6380000" />
       <workItem from="1713861712365" duration="7612000" />
-      <workItem from="1713883625214" duration="7755000" />
+      <workItem from="1713883625214" duration="8909000" />
+      <workItem from="1713975024382" duration="1492000" />
+      <workItem from="1714022548840" duration="2799000" />
+      <workItem from="1714041875954" duration="974000" />
+      <workItem from="1714067983514" duration="1552000" />
+      <workItem from="1714112465479" duration="7083000" />
+      <workItem from="1714218979555" duration="5217000" />
     </task>
     <task id="LOCAL-00001" summary="Updated index.html and added something.html">
       <option name="closed" value="true" />
@@ -256,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713616474773</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="I added new elements, and now it's almost final version">
+      <option name="closed" value="true" />
+      <created>1713905615058</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713905615058</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +293,8 @@
     <MESSAGE value="I totally change anything." />
     <MESSAGE value="I added animation" />
     <MESSAGE value="I added gallery" />
-    <option name="LAST_COMMIT_MESSAGE" value="I added gallery" />
+    <MESSAGE value="I added new elements, and now it's almost final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="I added new elements, and now it's almost final version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

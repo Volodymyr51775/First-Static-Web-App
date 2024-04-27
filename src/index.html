@@ -7,190 +7,212 @@
     <link rel="icon" href="img/ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
-<script>
-    window.addEventListener('scroll', function() {
-        var elements = document.querySelectorAll('.content, .about, .about_text, .about_photo, .about_2, .text, .image-container'); // замініть це на селектори ваших елементів
-        var windowHeight = window.innerHeight;
+    <script>
+        window.addEventListener('scroll', function() {
+            var elements = document.querySelectorAll('.content, .about, .about_text, .about_photo, .about_2, .text, .image-container'); // замініть це на селектори ваших елементів
+            var windowHeight = window.innerHeight;
 
-        function checkPosition() {
-            for (var i = 0; i < elements.length; i++) {
-                var element = elements[i];
-                var positionFromTop = elements[i].getBoundingClientRect().top;
+            function checkPosition() {
+                for (var i = 0; i < elements.length; i++) {
+                    var element = elements[i];
+                    var positionFromTop = elements[i].getBoundingClientRect().top;
 
-                if (positionFromTop - windowHeight <= 0) {
-                    element.classList.add('fade-in-element');
+                    if (positionFromTop - windowHeight <= 0) {
+                        element.classList.add('fade-in-element');
+                    }
                 }
             }
-        }
 
-        checkPosition();
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-        var elements = document.querySelectorAll('.content, .about, .about_text, .about_photo, .about_2, .text'); // замініть це на селектори ваших елементів
-        var windowHeight = window.innerHeight;
+            checkPosition();
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            var elements = document.querySelectorAll('.content, .about, .about_text, .about_photo, .about_2, .text'); // замініть це на селектори ваших елементів
+            var windowHeight = window.innerHeight;
 
-        function checkPosition() {
-            for (var i = 0; i < elements.length; i++) {
-                var element = elements[i];
-                var positionFromTop = elements[i].getBoundingClientRect().top;
+            function checkPosition() {
+                for (var i = 0; i < elements.length; i++) {
+                    var element = elements[i];
+                    var positionFromTop = elements[i].getBoundingClientRect().top;
 
-                if (positionFromTop - windowHeight <= 0) {
-                    element.classList.add('fade-in-element');
+                    if (positionFromTop - windowHeight <= 0) {
+                        element.classList.add('fade-in-element');
+                    }
                 }
             }
+
+            checkPosition();
+
+            window.addEventListener('scroll', checkPosition);
+        });
+
+
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
         }
-
-        checkPosition();
-
-        window.addEventListener('scroll', checkPosition);
-    });
-
-
-
-    function scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
-
-</script>
+    </script>
 
 <body>
-    <div class="main">
-        <div class="top_parallax">
-            <div class="top_bar">
-                <h1>DAVAI-TENNIS</h1>
-            </div>
-            <div class="navigation_bar">
-                <p onclick="scrollToSection('about')">A propos de moi</p>
-                <p onclick="scrollToSection('news')">Actualités</p>
-                <p onclick="scrollToSection('gallery')">gallerie</p>
-            </div>
-            <script>
-                // JavaScript для руху зображення
-                window.addEventListener('scroll', () => {
-                    const scrollPosition = window.scrollY;
-                    // Змінюємо позицію фонового зображення відповідно до прокрутки
-                    document.querySelectorAll('.top_parallax').forEach(parallax => {
-                        parallax.style.backgroundPosition = `80% ${-0.1 * scrollPosition}px`;
-                    });
-                });
-            </script>
-        </div>
-
-        <div class="content">
-            <div class="about" id="about">
-                <div class="about_text">
-                    <h1>Bonjour,</h1>
-                    <p>Je m’appelle Tetiana. Je suis arrivée en France avec ma grande sœur en mars 2022, à l’âge de 14 ans, après avoir fui l’Ukraine.</p>
-                    <p>Mon père a perdu son travail à cause de la guerre et mes parents, restés à Kiev, sont dans une situation financière compliquée. Ma sœur et moi avons été accueillies à Hossegor par des personnes dévouées qui nous ont hébergées, se sont occupées de nous et m’ont offert la possibilité de continuer à jouer au tennis. Cette situation ne pouvait pas durer longtemps. Ma sœur a dû retourner en Ukraine et j’ai été prise en charge par l’Aide Sociale à l’Enfance, qui m’a trouvé une famille d’accueil à Tarnos. Tout cela a été pour moi une période très difficile.</p>
-                </div>
-                <div class="about_photo">
-                    <img src="img/gallery/g_img_1.jpg" alt="img_1">
-                </div>
-            </div>
-
-            <div class="about_2">
-                <div class="void"></div>
-                <div class="text">
-                    <p>En l’espace de deux ans, j’ai gagné en maturité et je suis devenue plus indépendante. Une fois ma situation stabilisée, j’ai commencé à regarder vers l’avenir. Tout en continuant à suivre l’école à distance en Ukraine, j’ai obtenu le Diplôme National du Brevet avec mention très bien et je suis actuellement scolarisée en classe de seconde au lycée de Tyrosse, avec des résultats très honorables.</p>
-<!--                    <p>Mais mes objectifs ne sont pas uniquement scolaires : je rêve de devenir joueuse de tennis professionnelle. En effet, je pratique ce sport depuis l'âge de cinq ans et demi et j’ai participé à mes premiers tournois à 10 ans. Deux ans plus tard, j’étais qualifiée au niveau national et même international. Le Covid ne m’a pas empêchée de continuer à jouer. C’est la guerre qui m’a arrêtée.</p>-->
-<!--                    <p>Pour parvenir à me faire une place parmi les meilleures joueuses de ma catégorie, il faut s’entrainer dur, avec une détermination sans faille, et progresser au classement. Cela ne peut se faire sans participer à des grands tournois nationaux et internationaux. Je travaille donc pendant une partie des vacances scolaires pour contribuer au financement de mes déplacements. En effet, mon coach, qui m’entraîne et m’accompagne en tournois bénévolement depuis plusieurs mois, ne peut pas tout prendre en charge. Je réfléchis également à suivre dès septembre prochain mes cours scolaires en distanciel pour avoir une organisation plus adaptée à ce double projet mais cela a également un coût. </p>-->
-<!--                    <p>Si vous avez la possibilité de m’aider à devenir joueuse professionnelle tout en poursuivant mes études, je vous invite à déposer la participation de votre choix dans cette cagnotte.</p>-->
-<!--                    <p>Merci d’avance pour votre aide et je vous tiendrai bien évidemment au courant de ma progression tennistique et scolaire. </p>-->
-
-                </div>
-            </div>
-
-            <div class="about" style="margin-top: 50px">
-                <div class="about_text">
-                    <p>Mais mes objectifs ne sont pas uniquement scolaires : je rêve de devenir joueuse de tennis professionnelle. En effet, je pratique ce sport depuis l'âge de cinq ans et demi et j’ai participé à mes premiers tournois à 10 ans. Deux ans plus tard, j’étais qualifiée au niveau national et même international. Le Covid ne m’a pas empêchée de continuer à jouer. C’est la guerre qui m’a arrêtée.</p>
-                </div>
-                <div class="about_photo">
-                    <img src="img/gallery/g_img_7.jpg" alt="img_1">
-                </div>
-            </div>
-
-            <h1 id="news">actualités</h1>
-
-            <div class="about">
-                <div class="about_photo">
-                    <img src="img/gallery/g_img_3.jpg" alt="img12">
-                </div>
-
-                <div class="about_text" style="border-radius: 10px; background-color: #f0f0f0" >
-                    <h1>Text</h1>
-                    <p>text text text</p>
-                    <p>text text text</p>
-                    <p>text text text</p>
-                </div>
-            </div>
-<!--            <div class="news">-->
-<!--                <div class="news_img">-->
-<!--                    <div class="description">-->
-<!--                        <p>Bodsfng</p>-->
-<!--                        <p>sdf</p>-->
-<!--                        <p>adfas</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--            </div>-->
-
-
-            <h1 id="gallery">gallerie</h1>
-
-
-            <div class="gallery">
-                <div class="image-container">
-                    <img src="img/gallery/g_img_1.jpg" alt="g_img_1">
-                </div>
-                <div class="image-container">
-                    <img src="img/gallery/g_img_2.jpg" alt="g_img_2">
-                </div>
-                <div class="image-container">
-                    <img src="img/gallery/g_img_3.jpg" alt="g_img_3">
-                </div>
-                <div class="image-container">
-                    <img src="img/gallery/g_img_4.jpg" alt="g_img_4">
-                </div>
-                <div class="image-container">
-                    <img src="img/gallery/g_img_5.jpg" alt="g_img_5">
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="bottom_bar">
-            <p>example@gmail.com</p>
-        </div>
-        <div class="space_for_phone"></div>
+<div class="main">
+    <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
     </div>
+
+    <div class="menuTest">
+        <p onclick="scrollToSection('about')">A propos de moi</p>
+        <p onclick="scrollToSection('news')">Actualités</p>
+        <p onclick="scrollToSection('gallery')">Gallerie</p>
+    </div>
+    <div class="top_parallax">
+        <div class="top_bar">
+            <h1 style="color: white">DAVAI TENNIS</h1>
+        </div>
+        <div class="navigation_bar">
+            <p onclick="scrollToSection('about')">A propos de moi</p>
+            <p onclick="scrollToSection('news')">Actualits</p>
+            <p onclick="scrollToSection('gallery')">Gallérie</p>
+        </div>
+        <script>
+            // JavaScript для руху зображення
+            window.addEventListener('scroll', () => {
+                const scrollPosition = window.scrollY;
+                // Змінюємо позицію фонового зображення відповідно до прокрутки
+                document.querySelectorAll('.top_parallax').forEach(parallax => {
+                    parallax.style.backgroundPosition = `80% ${-0.1 * scrollPosition}px`;
+                });
+            });
+        </script>
+    </div>
+
+    <div class="content">
+        <div class="about" id="about">
+            <div class="about_text">
+                <h1>Salut,</h1>
+                <p>Je m’appelle Tetiana. Je suis arrivée en France avec ma grande sœur en mars 2022, à l’âge de 14 ans, après avoir fui l’Ukraine.</p>
+                <p>Mon père a perdu son travail à cause de la guerre et mes parents, restés à Kiev, sont dans une situation financière compliquée. Ma sœur et moi avons été accueillies à Hossegor par des personnes dévouées qui nous ont hébergées, se sont occupées de nous et m’ont offert la possibilité de continuer à jouer au tennis. Cette situation ne pouvait pas durer longtemps. Ma sœur a dû retourner en Ukraine et j’ai été prise en charge par l’Aide Sociale à l’Enfance, qui m’a trouvé une famille d’accueil à Tarnos. Tout cela a été pour moi une période très difficile.</p>
+            </div>
+            <div class="about_photo">
+                <img src="img/img_lego.png" alt="img_1">
+            </div>
+        </div>
+
+        <div class="about_2">
+            <div class="void"></div>
+            <div class="text">
+                <p>En l’espace de deux ans, j’ai gagné en maturité et je suis devenue plus indépendante. Une fois ma situation stabilisée, j’ai commencé à regarder vers l’avenir. Tout en continuant à suivre l’école à distance en Ukraine, j’ai obtenu le Diplôme National du Brevet avec mention très bien et je suis actuellement scolarisée en classe de seconde au lycée de Tyrosse, avec des résultats très honorables.</p>
+                <!--                    <p>Mais mes objectifs ne sont pas uniquement scolaires : je rêve de devenir joueuse de tennis professionnelle. En effet, je pratique ce sport depuis l'âge de cinq ans et demi et j’ai participé à mes premiers tournois à 10 ans. Deux ans plus tard, j’étais qualifiée au niveau national et même international. Le Covid ne m’a pas empêchée de continuer à jouer. C’est la guerre qui m’a arrêtée.</p>-->
+
+            </div>
+        </div>
+
+        <div class="about" style="margin-top: 50px">
+            <div class="about_text">
+                <p>Mais mes objectifs ne sont pas uniquement scolaires : je rêve de devenir joueuse de tennis professionnelle. En effet, je pratique ce sport depuis l'âge de cinq ans et demi et j’ai participé à mes premiers tournois à 10 ans. Deux ans plus tard, j’étais qualifiée au niveau national et même international. Le Covid ne m’a pas empêchée de continuer à jouer. C’est la guerre qui m’a arrêtée.</p>
+            </div>
+            <div class="about_photo">
+                <img src="img/gallery/g_img_7.jpg" alt="img_1">
+            </div>
+
+        </div>
+
+        <div class="just_text">
+            <div class=".text">
+                                    <p>Pour parvenir à me faire une place parmi les meilleures joueuses de ma catégorie, il faut s’entrainer dur, avec une détermination sans faille, et progresser au classement. Cela ne peut se faire sans participer à des grands tournois nationaux et internationaux. Je travaille donc pendant une partie des vacances scolaires pour contribuer au financement de mes déplacements. En effet, mon coach, qui m’entraîne et m’accompagne en tournois bénévolement depuis plusieurs mois, ne peut pas tout prendre en charge. Je réfléchis également à suivre dès septembre prochain mes cours scolaires en distanciel pour avoir une organisation plus adaptée à ce double projet mais cela a également un coût. </p>
+                                    <p>Si vous avez la possibilité de m’aider à devenir joueuse professionnelle tout en poursuivant mes études, je vous invite à déposer la participation de votre choix dans cette cagnotte.</p>
+                                    <p>Merci d’avance pour votre aide et je vous tiendrai bien évidemment au courant de ma progression tennistique et scolaire. </p>
+                                    <p style="margin-top: 20px; font-size: 30px">Tetiana</p>
+            </div>
+        </div>
+
+        <h1 id="news">Actualités</h1>
+
+        <div class="about">
+            <div class="about_photo">
+                <img src="img/gallery/g_img_3.jpg" alt="img12">
+            </div>
+
+            <div class="about_text" style="border-radius: 10px; background-color: #f0f0f0" >
+                <h1>Text</h1>
+                <p>text text text</p>
+                <p>text text text</p>
+                <p>text text text</p>
+            </div>
+        </div>
+        <!--            <div class="news">-->
+        <!--                <div class="news_img">-->
+        <!--                    <div class="description">-->
+        <!--                        <p>Bodsfng</p>-->
+        <!--                        <p>sdf</p>-->
+        <!--                        <p>adfas</p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+
+        <!--            </div>-->
+
+
+        <h1 id="gallery">Gallerie</h1>
+
+
+        <div class="gallery">
+            <div class="image-container">
+                <img src="img/gallery/g_img_1.jpg" alt="g_img_1">
+            </div>
+            <div class="image-container">
+                <img src="img/gallery/g_img_2.jpg" alt="g_img_2">
+            </div>
+            <div class="image-container">
+                <img src="img/gallery/g_img_3.jpg" alt="g_img_3">
+            </div>
+            <div class="image-container">
+                <img src="img/gallery/g_img_4.jpg" alt="g_img_4">
+            </div>
+            <div class="image-container">
+                <img src="img/gallery/g_img_5.jpg" alt="g_img_5">
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="bottom_bar">
+        <p>example@gmail.com</p>
+    </div>
+    <div class="space_for_phone"></div>
+
+</div>
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginRight = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginRight= "0";
+    }
+
+    const menuBtn = document.querySelector('.menu-toggle');
+    const menuLinks = document.querySelectorAll('.menuTest p');
+    const menu = document.querySelector('.menuTest');
+
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('open');
+        menu.classList.toggle('active');
+    });
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menuBtn.classList.toggle('open');
+            menu.classList.toggle('active');
+        });
+    });
+
+    function scrollToSection(id) {
+        const element = document.getElementById(id);
+        element.scrollIntoView({behavior: "smooth"});
+    }
+</script>
 </body>
 </html>
-
-
-<!--<body>-->
-<!--    <div class="main">-->
-<!--        <div class="navbar">-->
-<!--            <div class="icon">-->
-<!--                <h2 class="logo">-->
-<!--                    TestLogo-->
-<!--                </h2>-->
-<!--            </div>-->
-
-<!--            <div class="menu">-->
-<!--                <ul>-->
-<!--                    <li><a href="#">About</a></li>-->
-<!--                    <li><a href="#">Images</a></li>-->
-<!--                    <li><a href="#">Our goal</a></li>-->
-<!--                    <li><a href="#">Contacts</a></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-
-<!--            <div class="search">-->
-<!--                <input class="srch" type="search" name="" placeholder="Type to text">-->
-<!--                <a href="#"></a> <button class="btn">Search</button>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</body>-->
