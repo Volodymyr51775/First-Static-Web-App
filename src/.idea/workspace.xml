@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe40ca06-e302-419a-8709-22a352486b3c" name="Changes" comment="I added menu bar, and fulfilled the client's requirements" />
+    <list default="true" id="fe40ca06-e302-419a-8709-22a352486b3c" name="Changes" comment="I forgot add image">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,7 +199,9 @@
       <workItem from="1714041875954" duration="974000" />
       <workItem from="1714067983514" duration="1552000" />
       <workItem from="1714112465479" duration="7083000" />
-      <workItem from="1714218979555" duration="5576000" />
+      <workItem from="1714218979555" duration="6534000" />
+      <workItem from="1714471601459" duration="2124000" />
+      <workItem from="1714510531077" duration="628000" />
     </task>
     <task id="LOCAL-00001" summary="Updated index.html and added something.html">
       <option name="closed" value="true" />
@@ -269,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714251959372</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="I forgot add image">
+      <option name="closed" value="true" />
+      <created>1714252199638</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714252199638</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +309,8 @@
     <MESSAGE value="I added gallery" />
     <MESSAGE value="I added new elements, and now it's almost final version" />
     <MESSAGE value="I added menu bar, and fulfilled the client's requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="I added menu bar, and fulfilled the client's requirements" />
+    <MESSAGE value="I forgot add image" />
+    <option name="LAST_COMMIT_MESSAGE" value="I forgot add image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

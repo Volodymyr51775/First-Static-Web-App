@@ -77,14 +77,13 @@ body {
 .content {
     padding-top: 50px;
     font-family: "Omnes Pro", serif;
-    margin: 30px;
+    margin: 50px;
     background-color: #f0f0f0;
+    text-align: center; /* Center the text */
 }
 
-
-
 .content h1 {
-    text-align: center;
+    text-align: center; /* Center the text */
     margin: 50px 0;
 }
 
@@ -119,19 +118,20 @@ body {
 .about {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Додаємо цей рядок */
 }
 
 .about_text, .about_photo {
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    box-sizing: border-box;
+    width: 45%;
+    text-align: center; /* Center the text */
+    padding-bottom: 20px;
 }
 
 .about_text {
     width: 45%;
     text-align: center;
     padding-bottom: 20px;
+
 }
 
 .about_photo {
@@ -156,11 +156,12 @@ body {
     color: #101926;
 }
 
-.content p{
+.content p {
     font-family: "Omnes Pro", serif;
     padding-left: 20px;
     font-size: 1.7vw;
     color: #475467;
+    text-align: center; /* Center the text */
 }
 
 .about_2{
@@ -356,15 +357,22 @@ body {
     background-color: #172624;
     height: fit-content;
     border-radius: 10px;
+    font-size: 20px;
 
 }
 
 .bottom_bar p{
     color: white;
     padding: 20px;
+    margin: -30px;
 }
 
 @media (max-width: 600px) {
+
+    .content {
+        margin: 25px;
+    }
+
     .top_parallax {
         background-size: cover;
         min-height: 40%;
@@ -398,11 +406,11 @@ body {
         font-size: 4vw;
     }
 
-    .space_for_phone{
-        height: 78px;
-        background-color: #172624;
-        border-radius: 10px;
-    }
+    /*.space_for_phone{*/
+    /*    height: 78px;*/
+    /*    background-color: #172624;*/
+    /*    border-radius: 10px;*/
+    /*}*/
 
 
 
@@ -426,6 +434,7 @@ body {
     .about_text, .about_photo {
         width: 95%;
         text-align: center;
+
     }
 
     .void {
