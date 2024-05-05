@@ -20,11 +20,27 @@
         <p onclick="scrollToSection('about')">A propos de moi</p>
         <p onclick="scrollToSection('news')">Actualités</p>
         <p onclick="scrollToSection('gallery')">Gallérie</p>
+        <p onclick="scrollToSection('bottom_bar')">Contacts</p>
     </div>
     <div class="top_parallax">
         <div class="top_bar">
             <h1 style="color: white">DAVAI TENNIS</h1>
         </div>
+<!--        <div class="navigation_bar">-->
+<!--            <p onclick="scrollToSection('about')">A propos de moi</p>-->
+<!--            <p onclick="scrollToSection('news')">Actualités</p>-->
+<!--            <p onclick="scrollToSection('gallery')">Gallérie</p>-->
+<!--        </div>-->
+<!--        <script>-->
+<!--            // JavaScript для руху зображення-->
+<!--            window.addEventListener('scroll', () => {-->
+<!--                const scrollPosition = window.scrollY;-->
+<!--                // Змінюємо позицію фонового зображення відповідно до прокрутки-->
+<!--                document.querySelectorAll('.top_parallax').forEach(parallax => {-->
+<!--                    parallax.style.backgroundPosition = `80% ${-0.1 * scrollPosition}px`;-->
+<!--                });-->
+<!--            });-->
+<!--        </script>-->
     </div>
 
     <div class="content">
@@ -101,6 +117,16 @@
                 <p>Décembre 2023: Finaliste au tournoi de Biganos. Les victoires contre Luna Buijtenhuijs, classée 2/6 et Émilie Villemiane, classée 1/6, puis une défaite par Justine Bordessoule, classée 2/6</p>
             </div>
         </div>
+        <!--            <div class="news">-->
+        <!--                <div class="news_img">-->
+        <!--                    <div class="description">-->
+        <!--                        <p>Bodsfng</p>-->
+        <!--                        <p>sdf</p>-->
+        <!--                        <p>adfas</p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+
+        <!--            </div>-->
 
 
         <h1 id="gallery">Gallérie</h1>
@@ -130,7 +156,7 @@
 
     </div>
 
-    <div class="bottom_bar">
+    <div class="bottom_bar" id="bottom_bar">
         <p>Pour me contacter vous pouvez:</p><p>m’appeler sur +38 050 059 8681 (uniquement sur WhatsApp)
             Ou
             m’écrire au t.zhytelna@gmail.com</p>
@@ -138,5 +164,6 @@
     <div class="space_for_phone"></div>
 
 </div>
+<script src="scripts/up_right_menu_script.js"></script>
 </body>
 </html>
