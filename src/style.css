@@ -364,7 +364,7 @@ body {
 .bottom_bar p{
     color: white;
     padding: 20px;
-    margin: -30px;
+    margin-top: -30px;
 }
 
 @media (max-width: 600px) {
